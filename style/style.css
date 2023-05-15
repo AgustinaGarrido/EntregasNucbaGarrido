@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* nav */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #FFC4D1;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFAAC4;
+    padding: 0px 50px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+.navbar i{
+    font-size: 36px;
+    display: none;
+}
+#toggle-menu{
+    display: none;
+}
+
+
+li{
+    background-color: #FFE8E1;
+    border-radius: 1rem;
+    padding: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+} 
+.card {
+    background-color: #FFE8E1;
+    width: 500px;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.card__img{
+    width: 100%;
+     
+   border-radius: 0.8rem;
+
+}
+.texto_portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 60%;
+}
+h1{
+    font-size: 50px;
+    padding-top: 30px;
+}
+.description{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+.detalles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    background-color: #FFE8E1;
+    border-radius: 1rem;
+}
+.cosmetics__img{
+    width:100%;
+}
+.boton button{
+    padding: 10px;
+    margin: 30px;
+    border-radius: 1rem;
+    background-color: palevioletred;
+    
+}
+button:hover{
+    background-color: #fbd3e9;
+}
+.botones_hero{
+    display: flex;
+    justify-content: space-around;
+
+}
+.parrafos{
+padding: 50px;
+margin-top: 30px;
+font-size: 20px;
+background-color: #FFE8E1;
+}
+
+.carrito-contenedor{
+    width: 50px;
+    height: 50px;
+}
+.carrito-contenedor img{
+    width: 100%;
+}
+/*contacto*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+}
+
+.contenedor_map_contact{
+    display: flex;
+    padding: 3rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*footer*/
+footer{
+    background-color:  #EFAAC4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+footer a,
+footer p {
+   font-weight: 300px;
+   font-size: 14px;
+}
+footer span{
+    font-weight: 800;
+}
+footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* MEDIAS */
+
+@media (max-width: 768px){
+    .navbar ul{
+        background-color: #EFAAC4;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .navbar i {
+        display: block;
+    }
+    }
+     
+    #toggle-menu:checked ~ .listas{
+        display: flex;
+    }
+    
+    @media (max-width: 930px){
+        .detalles{
+            max-width: 250px;
+            width: 100%;
+        }
+        .description{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        iframe{
+            max-width: 300px;
+            width: 100%;
+            padding: 10px;
+        }
+        .container{
+            max-width: 350px;
+            width: 100%;
+        }
+        .card{
+            display: none;
+       }
+       .boton{
+        display: flex;
+       }
+    }

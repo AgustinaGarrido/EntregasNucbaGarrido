@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="terceraEntrega/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="img">
-            <img src="./terceraEntrega/img/logo_garrido.png" alt="logo">
-        </div>
+    <header class="header">
+            
+        <nav class="navbar">
+            
+            <img class="logo" src="./img/logo_garrido.png" alt="logo">
+            
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
         
         <ul class="listas">
-            <li>                   
-                Inicio                    
-            </li>
-            <li>                   
-                Productos    
-            </li>
-            <li> 
-                Envíos 
-            </li>
-            <li>  
-                Contacto
-            </li>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Productos</a> </li>
+            <li> <a href="#">Servicios</a> </li>
+            <li> <a href="#">Contactos</a> </li>
         </ul>
-    </nav>
+        <div class="carrito-contenedor">
+            <img class="carrito-img" src="./img/carrito.png" alt="Carro">
+        </div>
+        
+        </nav>
+    </header>
 
 
 
     <main>
-        <div class="container">
+        <div class="container" id="inicio">
             
             
             <div class="texto_portada">
-                <h1>Luxury Make up</h1>
+                <h1 class="animate__animated animate__bounce">Luxury Make up</h1>
                 <p>Maquillajes importados 100% originales, encontraras variedad en marcas y precios accesibles.</p>
                 <div class="boton">
                     <button>Catálogo</button>
@@ -46,7 +49,7 @@
 
 
             <div class="card">
-                <img src="./terceraEntrega/img/WhatsApp Image 2023-05-02 at 18.54.03.jpeg" alt="kylie" class="card__img">
+                <img src="./img/WhatsApp Image 2023-05-02 at 18.54.03.jpeg" alt="kylie" class="card__img">
                 <div class="card__info">
                     <div class="user__text">
                         <p>Encontraras marcas exclusivas como la de Kylie cosmetics y tambien su linea de skin care.</p>
@@ -59,7 +62,7 @@
     </main>
 
     <section>
-        <p class="parrafos">Nuestra empresa te ofrece productos de primera calidad en cuestion de pigmentacion y marcas que no se encuentran en cualquier lado todo importado y original.Tambien te ofrecemos nuestros servicios de maquillaje, peinados, spa, etc. En combos accesibles lo podes armar como mas te gusten siempre utilizando nuestros productos de primera calidad porque priorizamos la salud de nuestras clientas para que brilles en esa ocasion especial. Tenemos descuentos para maquillajes de novias y damas de honor.</p>
+        <p class="parrafos">Nuestra empresa te ofrece productos de primera calidad en cuestion de pigmentación y marcas exclusivas que no se encuentran en Argentina, todo importado y original.</p>
     </section>
 
 
@@ -67,25 +70,25 @@
 
         <div class="description">
             <div class="detalles">
-                <img src="./terceraEntrega/img/cosmetics_beauty_lipstick_pouch_makeup_icon_186818.png" alt="icono" class="cosmetics__img">
+                <img src="./img/cosmetics_beauty_lipstick_pouch_makeup_icon_186818.png" alt="icono" class="cosmetics__img">
                 <h3>Productos de Maquillaje</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis dolor vero mollitia quidem eum. Exercitationem!</p>
+                <p>Encontraras marcas como kylie cosmetics, Colour pop, Rude cosmetic,etc. y muchisimas marcas mas. Si no encontras el producto que buscas tambien te lo traemos. Tenemos productos veganos y Cruelty Free como Ruby Rose.</p>
                 <div class="boton">
                     <button>Ver mas</button>
                 </div>
             </div>
             <div class="detalles">
-                <img src="./terceraEntrega/img/skincare.png" alt="skincare" class="cosmetics__img">
+                <img src="./img/skincare.png" alt="skincare" class="cosmetics__img">
                 <h3>Productos de Skin Care</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus animi assumenda laudantium eum amet.</p>
+                <p>En esta seccion encontraras todo para tu rutina de Skin Care mucha variedad en marcas de productos, tambien accesorios como binchas, Gua sha que son las famosas piedras de jade o cuarzo, Rodillos Facial, Ice globe, etc.</p>
                 <div class="boton">
                     <button>Ver mas</button>
                 </div>
             </div>
             <div class="detalles">
-                <img src="./terceraEntrega/img/eye_pencil_eyeliner_cosmetic_beauty_makeup_icon_186814.png" alt="servicios" class="cosmetics__img">
+                <img src="./img/eye_pencil_eyeliner_cosmetic_beauty_makeup_icon_186814.png" alt="servicios" class="cosmetics__img">
                 <h3>Combos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatibus animi assumenda laudantium eum amet.</p>
+                <p>Te ofrecemos nuestro servicios de maquillaje profesional, incluye peinado y un dia de spa, o podes armar tu combo como mas te guste. Tenemos descuentos en novias y damas de honor.</p>
                 <div class="boton">
                     <button>Ver mas</button>
                 </div>
@@ -93,6 +96,32 @@
         </div>
 
     </section>
-    <script src="./prueba.js"></script>
+    <section>
+        <div class="contenedor_map_contact">
+
+            <div class="contact" id="contact">
+                <h2 class="animate__animated animate__backInLeft">
+                    Contactanos
+                </h2>
+                <p class="animate__animated animate__backInLeft"><span>Daniela Agustina Garrido</span></p>
+                <p class="animate__animated animate__backInLeft">🗺San Salvador de Jujuy</p>
+                <p class="animate__animated animate__backInLeft">📧garridod961@gamil.com</p>
+                <p class="animate__animated animate__backInLeft">📲+54 3888 549160</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.513597661691!2d-65.30567942368724!3d-24.18878558494398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f441ab962af%3A0xa758bfd511f1fac9!2sMonoblock%20H!5e0!3m2!1ses!2sar!4v1684085386423!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+            
+    </section>
+    <footer>
+        <div>
+            <ul class="footer-links">
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+            </ul>
+        </div>
+        <p>Prioriza tu salud en <span>LUXURY MAKE UP</span></p>
+    </footer>
 </body>
 </html>
